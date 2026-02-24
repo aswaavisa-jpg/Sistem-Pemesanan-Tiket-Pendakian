@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Models;
-
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -9,9 +7,12 @@ class Detailpendaki extends Model
 {
     use HasFactory;
 
+    protected $table = 'detail_pendaki';
+
     protected $fillable = [
         'pemesanan_id',
         'pendaki_id',
+        'status_pendakian',
     ];
 
     public function pemesanan()

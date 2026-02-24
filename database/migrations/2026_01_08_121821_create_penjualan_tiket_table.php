@@ -11,14 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('penjualantikets', function (Blueprint $table) {
+        Schema::create('penjualan_tiket', function (Blueprint $table) {
             $table->id();
-            $table->integer('nik')->unique();
-            $table->string('nama');
-            $table->enum('jenis_kelamin', ['L', 'P']);
-            $table->string('alamat');
-            $table->integer('no_hp');
-            $table->integer('jumlah_anggota');
+            $table->string('kode_tiket')->unique(); // kode tiket unik
+            $table->string('nama_pendaki');
+            $table->date('tanggal_pendakian');
+            $table->integer('jumlah_tiket');
+            $table->integer('total_harga');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('penjualantikets');
+        Schema::dropIfExists('penjualan_tiket');
     }
 };

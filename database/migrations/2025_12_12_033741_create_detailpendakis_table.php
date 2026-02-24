@@ -6,24 +6,21 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
-        Schema::create('detailpendakis', function (Blueprint $table) {
-            $table->id(); // Primary Key
-            $table->foreignId('pemesanan_id')->constrained(); // Foreign Key
-            $table->foreignId('pendaki_id')->constrained(); // Foreign Key (Anggota Tim)
+        Schema::create('detail_pendaki', function (Blueprint $table) {
+            $table->id();
+
+            // Relasi ke tabel pemesanan
+            $table->foreignId('pemesanan_id')->constrained('pemesanans')->onDelete('cascade');
+            // Relasi ke tabel pendaki
+            $table->foreignId('pendaki_id')->constrained('pendakis')->onDelete('cascade');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
-        Schema::dropIfExists('detailpendakis');
+        Schema::dropIfExists('detail_pendaki');
     }
 };
