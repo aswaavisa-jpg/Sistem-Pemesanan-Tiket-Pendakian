@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Feb 03, 2026 at 12:57 AM
+=======
+-- Generation Time: Jan 20, 2026 at 03:06 AM
+>>>>>>> 7edb927191094ad138f760d4540b5eda1a258d1f
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -60,6 +64,7 @@ CREATE TABLE `detail_pendaki` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+<<<<<<< HEAD
 --
 -- Dumping data for table `detail_pendaki`
 --
@@ -68,6 +73,8 @@ INSERT INTO `detail_pendaki` (`id`, `pemesanan_id`, `pendaki_id`, `status_pendak
 (40, 54, 19, 'selesai', '2026-02-02 07:25:35', '2026-02-02 07:41:47'),
 (41, 54, 17, 'aktif', '2026-02-02 07:25:35', '2026-02-02 07:25:35');
 
+=======
+>>>>>>> 7edb927191094ad138f760d4540b5eda1a258d1f
 -- --------------------------------------------------------
 
 --
@@ -215,7 +222,11 @@ CREATE TABLE `pemesanans` (
 --
 
 INSERT INTO `pemesanans` (`id`, `jalur_pendakian`, `tgl_naik`, `tgl_turun`, `jumlah_anggota`, `created_at`, `updated_at`) VALUES
+<<<<<<< HEAD
 (54, 'Selo', '2026-02-02', '2026-02-03', 2, '2026-02-02 07:25:22', '2026-02-02 07:42:04');
+=======
+(53, 'Suwanting', '2026-01-20', '2026-01-21', 1, '2026-01-19 18:52:24', '2026-01-19 18:52:24');
+>>>>>>> 7edb927191094ad138f760d4540b5eda1a258d1f
 
 -- --------------------------------------------------------
 
@@ -293,7 +304,11 @@ CREATE TABLE `penjualan_tiket` (
 --
 
 INSERT INTO `penjualan_tiket` (`id`, `kode_tiket`, `nama_pendaki`, `tanggal_pendakian`, `jumlah_tiket`, `total_harga`, `status_pembayaran`, `metode_pembayaran`, `bukti_pembayaran`, `verified_by`, `verified_at`, `catatan_verifikasi`, `created_at`, `updated_at`, `pemesanan_id`, `harga_per_orang`) VALUES
+<<<<<<< HEAD
 (28, 'TK-D7421413', 'Selo', '2026-02-02', 2, 50000, 'verified', 'e-wallet', 'pembayaran/bukti_28_1770042788.jpeg', 1, '2026-02-02 07:34:42', NULL, '2026-02-02 07:25:42', '2026-02-02 07:42:25', 54, 20000);
+=======
+(27, 'TK-111D7EE0', 'Suwanting', '2026-01-20', 1, 20000, 'pending', 'e-wallet', 'pembayaran/bukti_27_1768873969.jpeg', NULL, NULL, NULL, '2026-01-19 18:52:37', '2026-01-19 18:52:49', 53, 20000);
+>>>>>>> 7edb927191094ad138f760d4540b5eda1a258d1f
 
 -- --------------------------------------------------------
 
@@ -315,6 +330,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
+<<<<<<< HEAD
 ('4SnRcmanBmcXnmXQZTtVGo4MsY6OF8Zyyruaaf3a', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6456', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiTmhPbkRkNHBSNVB6SXRTWDV5Qmg5T0Z3R2tiMVFFQ1JJQkZZeXliMSI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODA4MCI7czo1OiJyb3V0ZSI7czo5OiJkYXNoYm9hcmQiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1770038679),
 ('5iTMaJnrsV5VDZeZNHcbdYpe8pmAcxaHGdWwwARH', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6456', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiT0Z5cjU0cXZrRWhPbHA2S3d1SXhaTjBsZjgybDNCNFljQVlmWnlTYiI7czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czozNzoiaHR0cDovLzEyNy4wLjAuMTo4MDgwL2FkbWluL3BlbWVzYW5hbiI7fXM6OToiX3ByZXZpb3VzIjthOjI6e3M6MzoidXJsIjtzOjI3OiJodHRwOi8vMTI3LjAuMC4xOjgwODAvbG9naW4iO3M6NToicm91dGUiO3M6NToibG9naW4iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1770039688),
 ('dq9mZiA4QNgqUCp6Jet1w69cH04gFW5NZBLl9JJc', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6456', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiR2VXeUNkYzhuUW5UYjFJRjZXS2p5RmRhUmdORWhxWW5yc0ZndE1rcyI7czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czozMzoiaHR0cDovLzEyNy4wLjAuMTo4MDgwL2FkbWluL3VzZXJzIjt9czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODA4MC9sb2dpbiI7czo1OiJyb3V0ZSI7czo1OiJsb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1770039689),
@@ -329,6 +345,9 @@ INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, 
 ('va7cO13J74C0Ks45tXE6JvMZGfWzFv7VDDenUrYv', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6456', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiMnJmQkJtTmNZNU50U3NrZE94Vk15ZlcyZDBzR01HTHhyaWFEc0s2SiI7czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czozNzoiaHR0cDovLzEyNy4wLjAuMTo4MDgwL2FkbWluL2Rhc2hib2FyZCI7fXM6OToiX3ByZXZpb3VzIjthOjI6e3M6MzoidXJsIjtzOjI3OiJodHRwOi8vMTI3LjAuMC4xOjgwODAvbG9naW4iO3M6NToicm91dGUiO3M6NToibG9naW4iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1770039687),
 ('vDrHQ3Is8x8pdC4tAhSEbcO2YBGdLgREajAxKTCy', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6456', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiTlFlUE9OZEdkejlqSmxKY1ZnbVFaVzN6d0I3UnRBOEVWb0ZIeW85MyI7czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czozNToiaHR0cDovLzEyNy4wLjAuMTo4MDgwL2FkbWluL3BlbmRha2kiO31zOjk6Il9wcmV2aW91cyI7YToyOntzOjM6InVybCI7czoyNzoiaHR0cDovLzEyNy4wLjAuMTo4MDgwL2xvZ2luIjtzOjU6InJvdXRlIjtzOjU6ImxvZ2luIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1770039687),
 ('XlZuZSWRpkqc6qmGbG9xTqPmejckarot8uIWOSGI', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.19041.6456', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQ2JqVTBWVXBuRkZlY1Y1UnRUb1dFcDhFZzc4NWs2dGZ2SmF4dVNOcCI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODA4MCI7czo1OiJyb3V0ZSI7czo5OiJkYXNoYm9hcmQiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1770039663);
+=======
+('KOaGEAxWyGkWJRuHj5mSEA9hNVjzI8AiDAmkSEhm', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiSVBwV1htblo2eHhYbHBseWp4NVJQOFYxYjVHZkp0Y1lhVkFnVFNIQyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJuZXciO2E6MDp7fXM6Mzoib2xkIjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7czo1OiJyb3V0ZSI7czo5OiJkYXNoYm9hcmQiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyO30=', 1768874728);
+>>>>>>> 7edb927191094ad138f760d4540b5eda1a258d1f
 
 -- --------------------------------------------------------
 
@@ -353,10 +372,15 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `role`, `created_at`, `updated_at`) VALUES
+<<<<<<< HEAD
 (1, 'Admin Pendakian', 'admin@tiketpendakian.com', '2026-01-13 07:49:20', '$2y$12$gEo1LanzznyJaZu/Nl.pYefMqYVG0NRR81k8QXyWT3i2TU1sapHMC', '6ucDxQey6E6kzzWmyEOmDKcPxDkw1XuYTNgthpK0bonRQJrTAf7V2ESSb1PC', 'Admin', '2026-01-13 07:49:20', '2026-01-13 07:49:20'),
 (2, 'Pendaki User', 'pendaki@tiketpendakian.com', '2026-01-13 07:49:21', '$2y$12$1AiAy9FvC1GdCgXzBNDOUuGm/i.gSY7nRrsxWNCd.Q4wWzHphipqu', 'oBh0Yxp7Hsi4jITyDOT93ZlE4UN3Un4GjbSLnxRmX5OZikdoZeiQT182qxep', 'Pendaki', '2026-01-13 07:49:21', '2026-01-13 07:49:21'),
 (5, 'avisa', 'avisa@tiketpendakian.com', '2026-02-02 07:48:12', '$2y$12$VxhKaVyc5fjImIr/6IB8UOAJ2QGdrHAy1cbk4dT9HYHaV8QJFDvCy', NULL, 'Admin', '2026-02-02 07:40:31', '2026-02-02 07:48:12'),
 (6, 'avisa aswa azzahra', 'aswaavisa@gmail.com', NULL, '$2y$12$HIVjsy5O47l9ItY56S3XZecaXdA3i8RBvkgtyI.Os9q12n52GCfX.', NULL, 'Pendaki', '2026-02-02 07:57:02', '2026-02-02 07:57:02');
+=======
+(1, 'Admin Pendakian', 'admin@tiketpendakian.com', '2026-01-13 07:49:20', '$2y$12$gEo1LanzznyJaZu/Nl.pYefMqYVG0NRR81k8QXyWT3i2TU1sapHMC', 'Qr8QhZKRzB3Yptmlj5jLB7EYQE684fwtzyPkrZurXjhfSAz4SFmTo2tWyJdJ', 'Admin', '2026-01-13 07:49:20', '2026-01-13 07:49:20'),
+(2, 'Pendaki User', 'pendaki@tiketpendakian.com', '2026-01-13 07:49:21', '$2y$12$1AiAy9FvC1GdCgXzBNDOUuGm/i.gSY7nRrsxWNCd.Q4wWzHphipqu', 'lpcFuAhuQOBrTJuF2VheiKyaiRr1Kq07XMMP9fjLFFiqwbsEEQ1PWpdhQhNo', 'Pendaki', '2026-01-13 07:49:21', '2026-01-13 07:49:21');
+>>>>>>> 7edb927191094ad138f760d4540b5eda1a258d1f
 
 --
 -- Indexes for dumped tables
@@ -472,7 +496,11 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `detail_pendaki`
 --
 ALTER TABLE `detail_pendaki`
+<<<<<<< HEAD
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+=======
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+>>>>>>> 7edb927191094ad138f760d4540b5eda1a258d1f
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -508,7 +536,11 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `pemesanans`
 --
 ALTER TABLE `pemesanans`
+<<<<<<< HEAD
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+=======
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+>>>>>>> 7edb927191094ad138f760d4540b5eda1a258d1f
 
 --
 -- AUTO_INCREMENT for table `pendakis`
@@ -520,13 +552,21 @@ ALTER TABLE `pendakis`
 -- AUTO_INCREMENT for table `penjualan_tiket`
 --
 ALTER TABLE `penjualan_tiket`
+<<<<<<< HEAD
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+=======
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+>>>>>>> 7edb927191094ad138f760d4540b5eda1a258d1f
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
+<<<<<<< HEAD
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+=======
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+>>>>>>> 7edb927191094ad138f760d4540b5eda1a258d1f
 
 --
 -- Constraints for dumped tables
